@@ -10,7 +10,7 @@
 \begin{document}
 \maketitle
 \abstract{
-	
+	U ovom radu su predstavljeni neki od alata koji se najčešće koriste za programiranje Android aplikacija. Iako ih je ovde predstavljeno svega par, treba napomenuti da postoji još mnoštvo veoma korisnih alata koji neće biti obradjeni u ovom radu.
 	}
 \tableofcontents
 \pagebreak
@@ -23,8 +23,8 @@ Napredna okruženja koja ćemo navesti u daljem tekstu, omogućuju programeru br
 Predstavljamo vam naš izbor razvojnih okruženja za programiranje Android aplikacija, među njima su: Android Studio, Unity3D i Appcelerator. \
 
 \section{Android Studio}
-Android Studio je jedan od najzastupljenijih i najbitnijih alata za Android programere. To je \textbf{integrisano razvojno okruženje} (eng. integrated development environemnt - IDE) za Android, zasnovano na softveru JetBrains IntelliJ IDEA.  \\
-\hspace*{0.7cm}Službeni programski jezik je \textbf{Java}, ali su takodje podržani C++, a i od nedavno Kotlin. Razvojno okruženje poseduje kompajler koji omogućava stvaranje APK datoteka (format instalacione datoteke koji se koristi za instaliranje neke aplikacije na Android uređajima), XML uređivač, kao i funkciju za prikaz dizajna, pomoću koje vizuelnim putem omogućava organizovanje elemenata na ekranu. \\
+Android Studio je jedan od najzastupljenijih i naj+bitnijih alata za Android programere. To je \textbf{integrisano razvojno okruženje} (eng. integrated development environemnt - IDE) za Android, zasnovano na softveru JetBrains IntelliJ IDEA.  \\
+\hspace*{0.7cm}Službeni programski jezik je \textbf{Java}, ali su takodje podržani C++, a i od nedavno Kotlin. Razvojno okruženje poseduje kompajler koji omogućava stvaranje APK datoteka (format instalacione datoteke koji se koristi za instaliranje neke aplikacije na Android uređajima), XML uređivač, kao i funkciju za prikaz dizajna, pomoću koje vizuelnim putem omogućava organizovanje elemenata na ekranu.\cite{Android Studio} \\
 \hspace*{0.7cm}Android Studio nudi kompletan skup dodatnih alata koji programeri mogu efikasno da iskoriste, kao što su AVD Manager, Android Debug Bridge, monitor za praćenje performansi itd.\\
 \hspace*{0.7cm}Neke od prednosti Android Studio-a:
 \begin{itemize}
@@ -33,6 +33,7 @@ Android Studio je jedan od najzastupljenijih i najbitnijih alata za Android prog
 \item{Kvalitetan emulator koji mnogo olakšava testiranje same aplikacije (slika \ref{fig:emulator_android_studija})}
 \item{Može se koristiti za sve android uređaje}
 \end{itemize}
+
 \begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.25]{android_studio_emulator.png}
@@ -41,8 +42,6 @@ Android Studio je jedan od najzastupljenijih i najbitnijih alata za Android prog
 \end{figure}
 \pagebreak
 
-
-\subsection{Neki dodatni alati Android Studio-a}
 Alat AVD Menadžer (eng. Android virtual device - AVD) je uključen u Android Studio i u osnovi je emulator koji omogućava pokretanje Android aplikacija na računaru. Zbog toga je vrlo koristan alat jer omogućava brzo testiranje aplikacija bez potrebe za instaliranjem na fizičke uređaje. Pored toga, omogućava simulaciju različitih veličina ekrana, specifikacija, verzija Androida i drugo. Ove pogodnosti dodatno omogućavaju optimizaciju aplikacije za njeno izvršavanje na bilo kojem uređaju.
 
 Android Debug Bridge (ADB) je još jedan od korisnih alata Android Studio-a. U suštini, ovaj alat omogućava terminalni interfejs za interakciju sa telefonom. Kako je Android platforma bazirana na Linuxu, terminalni pristup je jedini način dobijanja admin pristupa. ADB omogućuje most između uređaja i kompjutera.
@@ -50,13 +49,12 @@ Android Debug Bridge (ADB) je još jedan od korisnih alata Android Studio-a. U s
 
 \section{Unity 3D}
 
-Unity 3D je višeplatformsko okruženje za razvoj igara sa ugrađenim IDE softverska aplikacija koja pruža pogodnosti programerima pri razvoju softvera. IDE se sastoji od uređivača koda, ispravljača grešaka i takođe poseduje algoritme automatizacije koda, što 
-znatno olakšava rad programerima.
+Unity 3D je višeplatformsko okruženje za razvoj igara sa ugrađenim IDE softverska aplikacija koja pruža pogodnosti programerima pri razvoju softvera. IDE se sastoji od uređivača koda, ispravljača grešaka i takođe poseduje algoritme automatizacije koda, što znatno olakšava rad programerima. \cite{Unity1}
 
-Iako je prva verzija Unity-a, predstavljena na Apple konferenciji “Worldwide Developers Conference” 2005. godine, prvobitno bila namenjena da funkcioniše na Mac računarima, vremenom se razvila i postala dostupna za sve platforme. U narednoj tabeli prikazane su samo neke od vaznijih Unity verzija sa novinama koje su za konkretnu verziju karakteristicne.
+Iako je prva verzija Unity-a, predstavljena na Apple konferenciji “Worldwide Developers Conference” 2005. godine, prvobitno bila namenjena da funkcioniše na Mac računarima, vremenom se razvila i postala dostupna za sve platforme. U narednoj tabeli prikazane su samo neke od važnijih Unity verzija sa novinama koje su za konkretnu verziju karakteristične.
 
 \begin{table}[ht!]
-\caption Unity Verzije
+\label{tab:unity_verzije}
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Unity 2.0 (2007)}} & Olakšan rad više programera na istom projektu.\\ \hline
@@ -65,18 +63,18 @@ Iako je prva verzija Unity-a, predstavljena na Apple konferenciji “Worldwide D
 \textbf{Unity 2017}                             & Poboljšan rad sa animacijama i kamerama. \\ \hline
 \end{tabular}
 \end{table}
-
 Unity razvojno okruženje koristi jezik C kao primarni programski jezik.
 Kako je poznavanje jezika C i njegovih funkcionalnosti osnova programiranja i kako većina programera jako dobro poznaje ovaj jezik, sa lakoćom se može naviknuti na rad u Unity-ju. Takođe, jezik C ima veoma veliku zajednicu, pa se može očekivati da je problem sa kojim se korisnik sreće već obrađen negde u okviru ove zajednice. Samim tim, programer ima veliku podršku i literaturu koja mu je dostupna pri razvoju softvera u ovom okruženju. Učenje programiranja se zasniva na poznavanju koncepata ovog jezika, svaki početnik će vrlo lako savladati principe Unity okruženja. 
 
 Unity 3D ima široku primenu na velikom broju platformi.
 Koju god platformu preferirali, velike su šanse da je Unity podržava.
-Slika ispod predstavlja neke od mnogih platforma koje su kompatibilne sa Unity-em. 
+Slika ispod predstavlja neke od mnogih platforma koje su kompatibilne sa Unity-em (slika \ref{fig:dostupne_platforme}). 
 
 \begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.29]{platforme.png}
     \caption{Dostupne platforme}
+    \label{fig:dostupne_platforme}
 \end{figure}
 
 
@@ -136,12 +134,11 @@ Svakodnevno se platforma tehnički usavršava i unapreduje od strane nezavisnih 
 Android je vodeći operativni sistem za mobilne telefone i pretpostavlja se da će i u budućnosti biti u vrhu i doneti
 mnoštvo inovacija. Zbog svega navedenog, okruženja koja nam pomažu prilikom
 razvoja aplikacja za Android igraju veoma značajnu ulogu u svetu Andorid programiranja.
+\\\\\\\\\\
 
-\pagebreak
 \begin{thebibliography}{}
 \bibitem{Unity1}Unity 3D - https://www.mindinventory.com/blog/unity-3d-game-development/
-\bibitem{Alati1}Appcelerator - https://bs.eyewated.com/top-5-alatki-za-razvoj-multiformnih-mobilnih-aplikacija/
-\bibitem{Alati3} 
+\bibitem{Appcelerator}Appcelerator - https://bs.eyewated.com/top-5-alatki-za-razvoj-multiformnih-mobilnih-aplikacija/
 \bibitem{Alati2}Alati za programere - https://www.androidsis.com/bs/najbolji-alati-za-programere-android-aplikacija/
 \bibitem{Android Studio}Android Studio - https://androidayuda.com/bs/android-studio/
 \end{thebibliography}
